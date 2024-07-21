@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Burned&display=swap');
+
+header{
+    position: fixed;
+    width: 1900px;
+    height: 100px;
+    background-color: rgb(255, 117, 117);
+    border-radius: 20px;
+}
+header h1{
+    text-align: center;
+    position: relative;
+    top: -58px;
+    font-family: Roboto;
+    color: rgb(0, 0, 77);
+}
+header img{
+    position: relative;
+    left: 50px;
+    top: 18px;
+}
+#section1{
+    position: relative;
+    top: 250px;
+    left: 150px;
+}
+#section1 img{
+    border-radius: 30px;
+}
+#section1 h1{
+    font-weight: 400;
+}
+#news1{
+    left: 700px;
+    top: -250px;
+}
+#news1 img{
+    position: relative;
+    left: 130px;
+    top: 20px;
+    border-radius: 10px;
+}
+#news1 h1{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-family: roboto;
+}
+#news1 button{
+    position: relative;
+    left: 210px;
+    top: 20px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 77);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+#news2 button{
+    position: relative;
+    left: 210px;
+    top: 20px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 77);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+#news3 button{
+    position: relative;
+    left: 210px;
+    top: 20px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 77);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+#news1:hover{
+    width: 520px;
+    height: 320px;
+    overscroll-behavior-inline: smooth;
+    background-color: rgb(240, 184, 184);
+}
+
+#news2{
+    left: 1300px;
+    top: -550px;
+}
+#news2 img{
+    position: relative;
+    left: 130px;
+    top: 20px;
+    border-radius: 10px;
+}
+#news2 h1{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-family: roboto;
+}
+#news2:hover{
+    width: 520px;
+    height: 320px;
+    overscroll-behavior-inline: smooth;
+    background-color: rgb(240, 184, 184);
+}
+
+#news3{
+    left: 1000px;
+    top: -480px;
+}
+#news3 img{
+    position: relative;
+    left: 130px;
+    top: 20px;
+    border-radius: 10px;
+}
+#news3 h1{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-family: roboto;
+}
+#news3:hover{
+    width: 520px;
+    height: 320px;
+    overscroll-behavior-inline: smooth;
+    background-color: rgb(240, 184, 184);
+}
+.articles{
+    background-color: rgb(236, 154, 154);
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative; 
+    transition: 0.5s;
+}

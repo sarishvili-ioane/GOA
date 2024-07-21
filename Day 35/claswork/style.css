@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    display: flex;
+    font-family: roboto;
+    font-weight: 250;
+    font-size: 30px;
+    padding: 80px 80px;
+    cursor: pointer;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+    font-size: 30px;
+}
+header nav ul li button{
+    background-color: rgb(95,25,245);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+header nav ul li button:hover{
+    background-color: rgb(101, 65, 180);
+    transition: 0.5s;
+}
+header nav ul{
+    display: flex;
+    gap: 50px;
+    padding: 80px 120px;
+}
+main button{
+    background-color: rgb(95,25,245);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+main button:hover{
+    background-color: rgb(120, 79, 209);
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+main img{
+    width: 35%;
+    display: flex;
+    padding: 0 100px;
+}
+#text-section h2{
+    font-size: 50px;
+}
+#text-section p{
+    font-size: 20px;
+}
+#text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 190px;
+}
+#text-section, img{
+    width: 50%;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="personal information">
+        <h1 class="h1">Personal information</h1>
+        <form>
+            <label for="first name" class="firstlastname">* First name:</label>
+            <input type="text" id="first name">
+            <br><br>
+            <label for="middle name">Middle name:</label>
+            <input type="text" id="middle name">
+            <br><br>
+            <label for="last name" class="firstlastname">* Last name:</label>
+            <input type="text" id="last name">
+        </form>
+    </div>
+    <div>
+        <h1 class="h1">Address</h1>
+        <form>
+            <label for="address">Address:</label>
+            <input type="text" id="address">
+            <br><br>
+            <label for="city">City or Town:</label>
+            <input type="text" id="city">
+            <br><br>
+            <label for="state">State:</label>
+            <select name="Choose a State" id="state">
+                <option value="choose">Choose a State</option>
+            </select>
+            <br><br>
+            <label for="zipcode" class="firstlastname">* Zip code:</label>
+            <input type="text" id="zipcode">
+        </form>
+    </div>
+    <form>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" placeholder="Enter your first name">
+        <br><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" placeholder="Enter your last name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="it should contain @">
+        <br><br>
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" placeholder="only 10 digits are allowed">
+        <br><br>
+        <p>Gender:</p>
+        <input type="radio" name="title" value="Male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="title" value="Female" id="female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="date">Date Of Birth:</label>
+        <input type="date" id="date">
+        <br><br>
+        <label for="address">Address:</label>
+        <br>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="city">City:</label>
+        <input type="text" id="city">
+        <br><br>
+        <label for="area">Area PIN:</label>
+        <input type="text" id="area">
+        <br><br>
+        <label for="qualification">Qualification:</label>
+        <select name="qualification" id="qualification">
+            <option value="qualification">Select Qualification:</option>
+        </select>
+        <br><br>
+        <label for="">Specialization:</label>
+        <input type="checkbox" id="computer">
+        <label for="computer">Computer Science</label>
+        <br>
+        <input type="checkbox" id="info">
+        <label for="info">Information Technology</label>
+        <br>
+        <input type="checkbox" id="computera">
+        <label for="computera">Computer Architecture</label>
+        <br>
+        <input type="checkbox" id="tele">
+        <label for="tele">Tele Communication</label>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br><br>
+        <br><br>
+        <input type="submit" value="Registered">
+    </form>
+    <form>
+        <label for="memberid">Member ID:</label>
+        <input type="text" id="memberid">
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone">
+        <br><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+        <br><br>
+        <label for="status">Status:</label>
+        <select name="status" id="status">
+            <option value="support">Support</option>
+        </select>
+        <br><br>
+        <button><input type="text" placeholder="&lt; &lt;"></button>
+        <button><input type="text" placeholder="&lt;"></button>
+        <button><input type="text" placeholder="&gt;"></button>
+        <button><input type="text" placeholder="&gt; &gt;"></button>
+        <br><br>
+        <button>Add</button>
+        <button>Delete</button>
+        <button>Search</button>
+        <button>Main Menu</button>
+    </form>
+    <form>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Full Name">
+        <br><br>
+        <label for="email">Email *</label>
+        <input type="text" id="email" placeholder="Email" required>
+        <br><br>
+        <label for="picture">Upload Your Picture *</label>
+        <input type="button" value="Choose file" id="picture" required>
+        <br><br>
+        <label for="comments">Comments</label>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Any Comments"></textarea>
+        <br><br>
+        <input type="submit" value="Continue ->">
+    </form>
+    <p>User</p>
+    <div id="user">
+        <form>
+            <label class="userlabel" for="username">User Name *</label>
+            <br>
+            <input class="userinput" type="text" id="username">
+            <br>
+            <label class="userlabel" for="firstname">First Name *</label>
+            <br>
+            <input class="userinput" type="text" id="firstname">
+            <br>
+            <label class="userlabel" for="lastname">Last Name *</label>
+            <br>
+            <input class="userinput" type="text" id="lastname">
+            <br>
+            <label class="userlabel" for="language">Language</label>
+            <select class="userinput" name="language" id="language">
+                <option value="english">English</option>
+                <option value="georgian">Georgian</option>
+                <option value="russian">Russian</option>
+            </select>
+        </form>
+    </div>
+    <p>Contact Information</p>
+    <div id="user">
+        <form>
+            <label class="userlabel" for="email">Email *</label>
+            <br>
+            <input class="userinput" type="email" id="email">
+            <br>
+            <label class="userlabel" for="workphone">Work Phone *</label>
+            <br>
+            <input class="userinput" type="text" id="workphone">
+            <br>
+            <label class="userlabel" for="mobilephone">Mobile Phone</label>
+            <br>
+            <input class="userinput" type="text" id="mobilephone">
+            <br>
+            <label class="userlabel" for="notificationpreference">Notification Preference</label>
+            <br>
+            <input type="checkbox" id="notificationpreference" value="Email">
+            <label for="notificationpreference">Email</label>
+            <input type="checkbox" id="notificationpreference">
+            <label for="notificationpreference">SMS</label>
+            <p>Standart message rates may apply.</p>
+        </form>
+    </div>
+    <p>Security</p>
+    <div id="user">
+        <form>
+            <label class="userlabel" for="password">Password *</label>
+            <br>
+            <input class="userinput" type="password" id="password">
+            <br>
+            <label class="userlabel" for="confirmpass">Work Phone *</label>
+            <br>
+            <input class="userinput" type="password" id="confirmpass">
+        </form>
+    </div>
+    <p>Role Assigment</p>
+    <div id="user">
+        <p>Roles:</p>
+        <p>Controls Engineer</p>
+        <p>Maintenance Engineer</p>
+        <p>Maintenance Manager</p>
+        <p>Production Manager</p>
+    </div>
+</body>
+</html>

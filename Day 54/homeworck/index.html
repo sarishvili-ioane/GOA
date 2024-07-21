@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doucment</title>
+</head>
+<body>
+    <p id="p1">Hello</p>
+    <p id="p2">World</p>
+    <p id="p3">Html</p>
+
+    <button id="button1" onclick="changeText()">Change text</button>
+    <script src="script.js">
+        let p1 = document.getElementById("p1").textContent;
+        let p2 = document.getElementById("p2").textContent;
+        let p3 = document.getElementById("p3").textContent;
+
+        function changeText(){
+            p2 = p1;
+            p3 = p2;
+            p1 = p3;
+        }
+
+
+    </script>
+</body>
+</html>
