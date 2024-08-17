@@ -1,0 +1,18 @@
+@keyframes moveAndRotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(100px) rotate(180deg);
+    }
+    100% {
+        transform: translateX(0) rotate(360deg);
+    }
+}
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    animation: moveAndRotate 2s infinite ease-in-out;
+}
