@@ -1,0 +1,176 @@
+/* მთელი დოკუმენტის ფონი, შრიფტი და ტექსტის ფერი */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* ტექსტის ნაგულისხმევი ფერი */
+}
+
+/* HEADER სექციის სტილები */
+header {
+    background-color: #e63946; /* HEADER-ის ფონი */
+    padding: 20px 0; /* HEADER-ის ზედა და ქვედა შიდა დაცილება */
+    text-align: center; /* ცენტრში ტექსტის განლაგება */
+    color: #fff; /* ტექსტის ფერი */
+}
+
+header h1 {
+    margin: 0; /* HEADER-ის სათაურის გარეშე გარე დაცილება */
+    font-size: 2.5em; /* HEADER-ის სათაურის შრიფტის ზომა */
+}
+
+/* HEADER-ის ნავიგაციის მენიუს სტილები */
+header nav ul {
+    list-style: none; /* უსახო მარკირების ტიპი */
+    padding: 0; /* გარეშე შიდა დაცილება */
+    margin: 0; /* გარეშე გარე დაცილება */
+    display: flex; /* მენიუს ელემენტების ჰორიზონტალური განლაგება */
+    justify-content: center; /* ელემენტების ცენტრში განლაგება */
+}
+
+header nav ul li {
+    margin: 0 15px; /* მარცხენა და მარჯვენა გარე დაცილება */
+}
+
+/* HEADER-ის ნავიგაციის მენიუს ბმულების სტილები */
+header nav ul li a {
+    color: #fff; /* ბმულების ტექსტის ფერი */
+    text-decoration: none; /* ბმულების ხაზის გამორთვა */
+    font-weight: bold; /* ტექსტის სქელი სტილი */
+    text-transform: uppercase; /* ბმულების ტექსტის დიდი ასოებით გამოსახვა */
+}
+
+/* HERO სექციის სტილები */
+.hero {
+    background-color: #7f1d1d; /* HERO სექციის ფონი */
+    color: #fff; /* ტექსტის ფერი */
+    padding: 100px 0; /* ზემოდან და ქვემოდან დაცილება */
+    text-align: center; /* ტექსტის ცენტრში განლაგება */
+}
+
+.hero h2 {
+    font-size: 3em; /* დიდი შრიფტის ზომა HERO სექციის სათაურისთვის */
+    margin: 0; /* გარეშე გარე დაცილება */
+}
+
+.hero p {
+    font-size: 1.5em; /* შრიფტის ზომა აღწერითი ტექსტისთვის */
+    margin: 10px 0 20px; /* ზემოდან და ქვემოდან დაცილება */
+}
+
+/* HERO სექციის ღილაკის სტილები */
+.hero button {
+    background-color: #e63946; /* ღილაკის ფონი */
+    color: #fff; /* ღილაკის ტექსტის ფერი */
+    border: none; /* საზღვრების გარეშე */
+    padding: 10px 20px; /* შიდა დაცილება ღილაკში */
+    font-size: 1.2em; /* შრიფტის ზომა ღილაკში */
+    cursor: pointer; /* მაუსის კურსორის შეცვლა ღილაკზე გადაადგილებისას */
+    transition: background-color 0.3s ease; /* ფონის ფერის გადასვლის ეფექტი */
+}
+
+/* HERO სექციის ღილაკის hover ეფექტი */
+.hero button:hover {
+    background-color: #fff; /* ღილაკის ფერის შეცვლა hover-ზე */
+    color: #e63946; /* ტექსტის ფერის შეცვლა hover-ზე */
+    border: 2px solid #e63946; /* საზღვრების დამატება hover-ზე */
+}
+
+/* PORTFOLIO სექციის სტილები */
+.portfolio {
+    background-color: #f5f5f5; /* ფონი */
+    padding: 50px 0; /* ზემოდან და ქვემოდან დაცილება */
+    text-align: center; /* ტექსტის ცენტრში განლაგება */
+}
+
+.portfolio h2 {
+    font-size: 2.5em; /* სათაურის შრიფტის ზომა */
+    margin-bottom: 30px; /* ქვედა დაცილება */
+}
+
+/* PORTFOLIO სექციის პროექტების განლაგება (Grid) */
+.portfolio .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* სვეტების რაოდენობა და მინიმალური ზომა */
+    gap: 20px; /* დაცილება პროექტებს შორის */
+}
+
+/* PORTFOLIO სექციის პროექტების ბარათების სტილები */
+.portfolio .card {
+    background-color: #e63946; /* ბარათის ფონი */
+    color: #fff; /* ბარათის ტექსტის ფერი */
+    padding: 20px; /* შიდა დაცილება */
+    border-radius: 10px; /* კუთხეების მომრგვალება */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* გადაადგილებისა და ფერის გადასვლის ეფექტი */
+}
+
+/* PORTFOLIO სექციის ბარათების hover ეფექტი */
+.portfolio .card:hover {
+    transform: translateY(-10px); /* ბარათის ამოწევა hover-ზე */
+    background-color: #7f1d1d; /* ბარათის ფონის შეცვლა hover-ზე */
+}
+
+/* ABOUT სექციის სტილები */
+.about {
+    background-color: #e63946; /* ფონი */
+    color: #fff; /* ტექსტის ფერი */
+    padding: 50px 0; /* ზემოდან და ქვემოდან დაცილება */
+    text-align: center; /* ტექსტის ცენტრში განლაგება */
+}
+
+.about p {
+    font-size: 1.2em; /* შრიფტის ზომა აღწერითი ტექსტისთვის */
+    max-width: 600px; /* მაქსიმალური სიგანე ტექსტისთვის */
+    margin: 0 auto; /* ტექსტის ცენტრში განლაგება */
+}
+
+/* CONTACT სექციის სტილები */
+.contact {
+    background-color: #f5f5f5; /* ფონი */
+    padding: 50px 0; /* ზემოდან და ქვემოდან დაცილება */
+    text-align: center; /* ტექსტის ცენტრში განლაგება */
+}
+
+/* საკონტაქტო ფორმის სტილები */
+.contact form {
+    max-width: 400px; /* მაქსიმალური სიგანე ფორმისთვის */
+    margin: 0 auto; /* ფორმის ცენტრში განლაგება */
+}
+
+/* საკონტაქტო ფორმის input და textarea ველების სტილები */
+.contact form input, 
+.contact form textarea {
+    width: 100%; /* ველების სიგანე */
+    padding: 10px; /* შიდა დაცილება ველებში */
+    margin-bottom: 10px; /* ქვედა დაცილება ველებში */
+    border: 1px solid #ccc; /* საზღვრის ფერი */
+    border-radius: 5px; /* კუთხეების მომრგვალება */
+}
+
+/* საკონტაქტო ფორმის ღილაკის სტილები */
+.contact form button {
+    background-color: #e63946; /* ღილაკის ფონი */
+    color: #fff; /* ღილაკის ტექსტის ფერი */
+    border: none; /* საზღვრების გარეშე */
+    padding: 10px 20px; /* შიდა დაცილება ღილაკში */
+    font-size: 1.2em; /* შრიფტის ზომა ღილაკში */
+    cursor: pointer; /* მაუსის კურსორის შეცვლა ღილაკზე გადაადგილებისას */
+    transition: background-color 0.3s ease; /* ფონის ფერის გადასვლის ეფექტი */
+}
+
+/* საკონტაქტო ფორმის ღილაკის hover ეფექტი */
+.contact form button:hover {
+    background-color: #7f1d1d; /* ღილაკის ფერის შეცვლა hover-ზე */
+}
+
+/* FOOTER სექციის სტილები */
+footer {
+    background-color: #333; /* ფონი */
+    color: #fff; /* ტექსტის ფერი */
+    padding: 20px 0; /* ზემოდან და ქვემოდან დაცილება */
+    text-align: center; /* ტექსტის ცენტრში განლაგება */
+}
+
+footer p {
+    margin: 0; /* გარეშე გარე დაცილება */
+}
