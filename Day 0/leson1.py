@@ -17,8 +17,7 @@ left(90)
 
 forward(200)
 left(90)
-#end of square
-#draving a door
+
 
 forward(70)
 color("yellow")
