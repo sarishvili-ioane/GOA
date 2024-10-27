@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Word Example</title>
+</head>
+<body>
+    <h1>მონიშნეთ კონკრეტული სიტყვა</h1>
+    <p id="text">ეს არის მაგალითი ტექსტის, სადაც უნდა მონიშნოთ სიტყვა "მაგალითი".</p>
+    <button onclick="highlightWord('მაგალითი')">მონიშნე სიტყვა</button>
+
+    <script>
+        function highlightWord(word) {
+            const paragraph = document.getElementById('text');
+            const regex = new RegExp(`(${word})`, 'gi'); // რეგულარული გამოთქმა სიტყვისთვის
+            paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<mark>$1</mark>'); // ჩანაცვლება mark ტეგით
+        }
+    </script>
+</body>
+</html>
