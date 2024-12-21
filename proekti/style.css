@@ -1,0 +1,90 @@
+/* ძირითადი პარამეტრები */
+body {
+   
+    background-image: url(./Atlantic_near_Faroe_Islands.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(135deg, #003366, #000000); გრადიენტი ლურჯიდან შავში */
+  }
+  
+  .registration-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #004080; /* მუქი ლურჯი საზღვარი */
+  }
+  
+  .registration-form h2 {
+    text-align: center;
+    color: #004080; /* მუქი ლურჯი სათაური */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0b0044;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #004080; /* მუქი ლურჯი საზღვარი ველისთვის */
+    border-radius: 5px;
+    outline-color: #002b55; /* მუქი ლურჯი ფოკუსის ფერი */
+    font-size: 14px;
+  }
+  
+  .form-group input:focus {
+    border-color: #002b55; /* ფოკუსზე საზღვრის ფერის შეცვლა */
+    box-shadow: 0 0 5px rgba(0, 43, 85, 0.5);
+  }
+  
+  .form-group button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #004080, #002b55); /* ღილაკის ლურჯი გრადიენტი */
+    color: #090036;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease; /* ტრანზიცია ფერისა და ზომაზე */
+  }
+  
+  /* ღილაკის ხლამის და ზომის ზრდის ეფექტი */
+  .form-group button:hover {
+    background: linear-gradient(90deg, #002b55, #001f3d); /* მუქი ლურჯი და შავი გრადიენტი */
+    transform: scale(1.05); /* ზომის ზრდა 5%-ით მაუსის მიტანისას */
+  }
+  
+  /* ღილაკის ზომის ზრდის ანიმაცია დაჭერისას */
+  @keyframes button-click {
+    0% {
+      transform: scale(1.05); /* იწყება მაუსის მიტანის ზომიდან */
+    }
+    50% {
+      transform: scale(1.15); /* გაზრდა 15%-ით დაჭერისას */
+    }
+    100% {
+      transform: scale(1.05); /* დაბრუნება მაუსის მიტანის ზომაზე */
+    }
+  }
+  
+  .form-group button:active {
+    animation: button-click 0.3s ease forwards; /* ანიმაცია ღილაკზე დაჭერისას */
+  }
+  
