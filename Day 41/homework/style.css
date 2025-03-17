@@ -1,0 +1,10 @@
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: transform 0.5s ease-in-out;
+}
+
+.element:hover {
+    transform: rotate(45deg) scale(1.5) translateX(30px);
+}

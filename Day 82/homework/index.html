@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Element Creator</title>
+</head>
+<body>
+    <script>
+        // გაწვდოს მომხმარებლისთვის prompt
+        const elementType = prompt("Enter the type of element you want to create (e.g., div, p, span):");
+
+        // შემოწმება, რომ მომხმარებელმა არ დატოვა ველი ცარიელი
+        if (elementType) {
+            // შექმენით ახალი ელემენტი მომხმარებლის მიერ მითითებული ტიპით
+            const newElement = document.createElement(elementType);
+
+            // დაამატეთ ელემენტში ტექსტი
+            newElement.textContent = `This is a ${elementType} element.`;
+
+            // დაამატეთ ახალი ელემენტი body-ის თეგში
+            document.body.appendChild(newElement);
+        } else {
+            alert("No element type entered.");
+        }
+    </script>
+</body>
+</html>

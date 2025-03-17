@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movable Block</title>
+    <style>
+        #block {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute; /* Positioning to control movement */
+            top: 50px; /* Starting position */
+            left: 50px; /* Starting position */
+        }
+    </style>
+</head>
+<body>
+    <div id="block"></div>
+    <script>
+        // Get reference to the block element
+        const block = document.getElementById('block');
+
+        // Define movement step size (in pixels)
+        const step = 10;
+
+        // Handle keydown events
+        document.addEventListener('keydown', (event) => {
+            const blockRect = block.getBoundingClientRect();
+            const bodyRect = document.body.getBoundingClientRect();
+            
+            switch (event.key) {
+                case 'ArrowUp':
+                    if (blockRect.top - step >= bodyRect.top) {
+                        block.style.top = `${blockRect.top - bodyRect.top - step}px`;
+                    }
+                    break;
+                case 'ArrowDown':
+                    if (blockRect.bottom + step <= bodyRect.bottom) {
+                        block.style.top = `${blockRect.top - bodyRect.top + step}px`;
+                    }
+                    break;
+                case 'ArrowLeft':
+                    if (blockRect.left - step >= bodyRect.left) {
+                        block.style.left = `${blockRect.left - bodyRect.left - step}px`;
+                    }
+                    break;
+                case 'ArrowRight':
+                    if (blockRect.right + step <= bodyRect.right) {
+                        block.style.left = `${blockRect.left - bodyRect.left + step}px`;
+                    }
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
